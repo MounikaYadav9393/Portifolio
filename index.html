@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mounika Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <div class="nav-buttons">
+            <a href="#about"><button class="button">About</button></a>
+            <a href="#skills"><button class="button">Skills</button></a>
+            <a href="#projects"><button class="button">Projects</button></a>
+            <a href="#contact"><button class="button">Contact</button></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Mounika Uppunuthala</h2>
+            <img src="img.jpg" alt="Photo of Mounika Uppunuthala">
+            <p>I am studying B.Tech 3rd Year in MRECW.</p>
+            <p>I want to become a web developer.</p>
+            <p>I am interested in developing websites.</p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ol>
+                <li>Python Basics</li>
+                <li>HTML Basics</li>
+                <li>CSS Basics</li>
+            </ol>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <table border="1">
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>I have built a portfolio website using HTML and CSS.</td>
+                </tr>
+                <tr>
+                    <td>Python Simple Calculator</td>
+                    <td>I have built a simple calculator using Python.</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch with me using the form below:</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+
+                <p>Choose your gender:</p>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label><br>
+
+                <p>Select your interests:</p>
+                <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+                <label><input type="checkbox" name="interests" value="reading"> Reading</label><br>
+
+                <label for="bio">Bio (up to 200 characters):</label><br>
+                <textarea id="bio" name="bio" maxlength="200"></textarea><br>
+
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
